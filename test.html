@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>홈페이지 제작</title>
+</head>
+<body>
+
+    <body>
+    <div id="wrap">
+    	<div id="header">
+        <? require_once "./lib/top_login1.php"; ?>
+    	</div>  <!-- end of header -->
+
+    	<div id="menu">
+    	<? require_once "./lib/top_menu1.php"; ?>
+    	</div>  <!-- end of menu -->
+      <div id="content">
+    		<div id = "col1">
+    		  <? require_once "./lib/left_menu.php"; ?>
+    		</div>
+        <div id = "col2">
+          <form action="insert.php" name="member_form" method="post">
+            <div id="title">
+              <img src="../img/title_join.gif">
+            </div>
+          </form>
+    		  <? require_once "./lib/left_menu.php"; ?>
+    		</div>
+      </div> <!-- end of content -->
+    </div> <!-- end of wrap -->
+
+  </div>
+</body>
+</html>
